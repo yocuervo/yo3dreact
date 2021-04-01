@@ -1,0 +1,34 @@
+.boton {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.container {
+  text-align: center;
+}
+
+.contenedor__img {
+  width: 100%;
+  height: 40vh;
+  margin: 0px auto;
+}
+
+.imgfondo {
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+
+.imgYo {
+  position: absolute;
+  margin-left: 25%;
+  width: 50%;
+  display: block;
+}
+
+.imgCuervo {
+  position: absolute;
+  width: 15%;
+  margin-top: 18%;
+  margin-left: 70%;
+}
