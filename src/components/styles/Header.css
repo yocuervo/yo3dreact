@@ -1,0 +1,47 @@
+.header {
+  border: 2px solid rgb(90, 31, 167);
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  width: 60%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+  background-image: radial-gradient(
+    circle at 60.92% 57.65%,
+    #fee6d0 0,
+    #fbe7cf 3.85%,
+    #f7e8cf 7.69%,
+    #f4e9cf 11.54%,
+    #f0ebcf 15.38%,
+    #ebecd0 19.23%,
+    #e7edd1 23.08%,
+    #e3eed3 26.92%,
+    #dfefd6 30.77%,
+    #dbf0d8 34.62%,
+    #d7f1db 38.46%,
+    #d3f1df 42.31%,
+    #d0f2e2 46.15%,
+    #cdf2e6 50%,
+    #cbf2ea 53.85%,
+    #c9f2ee 57.69%,
+    #c8f2f1 61.54%,
+    #c7f2f5 65.38%,
+    #c7f2f8 69.23%,
+    #c8f1fb 73.08%,
+    #caf0fe 76.92%,
+    #ccf0ff 80.77%,
+    #cfefff 84.62%,
+    #d2eeff 88.46%,
+    #d6edff 92.31%,
+    #daebff 96.15%,
+    #dfeaff 100%
+  );
+}
+
+.btn {
+  margin-left: 2px;
+  margin-right: 2px;
+}
