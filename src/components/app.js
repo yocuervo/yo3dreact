@@ -3,16 +3,16 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from '../pages/Home';
 import Impresiones from '../pages/Impresiones';
-import Header from './Header';
+
+import Layout from './Layout';
 
 function App() {
         return(
             <BrowserRouter>
-                <Switch>
-                    <Route exact path="/home" component={Home} />
-                    <Route exact path="/home/impresiones" component={Impresiones} />
-                    <Route exact path="/header" component={Header} />
-                </Switch>
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/impresiones" component={Impresiones} />
+                    </Switch>
             </BrowserRouter>
         );
     }

@@ -13,7 +13,7 @@ function Home() {
             <img src={ImgFondo} className="imgfondo" alt="fondo"/>
             <div className="container__home">
                 <div className="row col-12">
-                    <Link   to="/home/impresiones" 
+                    <Link   to="/impresiones" 
                             className="col-sm-8 col-4 mx-auto btn btn-primary font-weight-bold boton">
                             INICIO
                     </Link>
