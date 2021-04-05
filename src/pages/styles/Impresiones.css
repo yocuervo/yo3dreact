@@ -1,0 +1,29 @@
+.container__impresiones {
+  width: 100%;
+}
+
+.titulo {
+  text-align: center;
+  color: blueviolet;
+}
+
+.col {
+  border: 5px solid rgb(90, 31, 167);
+  border-radius: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 50vh;
+}
+
+.contenedor__modelos {
+  position: relative;
+  margin: 2%;
+  height: 50%;
+  width: 50%;
+  margin-left: 25%;
+  background-color: chartreuse;
+}
+
+.row {
+  margin: 5px;
+}

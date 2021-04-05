@@ -8,6 +8,7 @@ import Contacto from '../pages/Contacto';
 
 import Layout from './Layout';
 import AppRoute from './AppRoute';
+import NotFound from '../pages/NotFound';
 
 function App() {
         return(
@@ -17,6 +18,7 @@ function App() {
                         <AppRoute exact path="/impresiones" component={Impresiones} layout={Layout} />
                         <AppRoute exact path="/quienessomos" component={QuienesSomos} layout={Layout} />
                         <AppRoute exact path="/contacto" component={Contacto} layout={Layout} />
+                        <AppRoute component={NotFound} layout={NotFound} />
                     </Switch>
             </BrowserRouter>
         );
