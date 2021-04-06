@@ -5,11 +5,13 @@
 .titulo {
   text-align: center;
   color: blueviolet;
+  text-decoration: underline;
 }
 
 .col {
   border: 5px solid rgb(90, 31, 167);
   border-radius: 20px;
+  background-color: rgb(77, 101, 167);
   margin-left: 2%;
   margin-right: 2%;
   height: 50vh;
@@ -26,4 +28,9 @@
 
 .row {
   margin: 5px;
+}
+
+.fondo {
+  position: absolute;
+  width: 100%;
 }
