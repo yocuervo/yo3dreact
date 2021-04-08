@@ -1,5 +1,9 @@
-.container__error {
-  width: 50%;
+.error__container {
+  height: 100vh;
+}
+
+.error__img {
   margin-left: 25%;
   margin-top: 5%;
+  width: 50%;
 }

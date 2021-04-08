@@ -5,8 +5,8 @@ import './styles/NotFound.css';
 
 function NotFound() {
     return (
-        <div className="container__error">
-            <img src={error} alt="404"/>
+        <div className="error__container">
+            <img className="error__img" src={error} alt="404"/>
         </div>
     )
 }

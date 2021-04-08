@@ -1,0 +1,26 @@
+.somos__container {
+  height: 100vh;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.img__fondo {
+  position: fixed;
+  z-index: -1;
+  transform: rotate(-22deg);
+  opacity: 35%;
+  width: 60h;
+  margin-left: 20%;
+  margin-left: 8%;
+}
+
+.somos__hdos {
+  color: rgb(0, 0, 0);
+}
+
+.somos__hcinco {
+  text-align: end;
+  color: rgb(241, 181, 102);
+}

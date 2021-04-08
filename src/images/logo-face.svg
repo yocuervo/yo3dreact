@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="25.4mm" height="25.592mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 74 75"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil3 {fill:#3C60B0}
+    .fil1 {fill:#6A8AC7}
+    .fil4 {fill:#8193C1}
+    .fil2 {fill:#ABBCDF}
+    .fil0 {fill:#FEFEFE;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2852914439504">
+   <g>
+    <path class="fil0" d="M32 28l8 0 0 -3c0,-4 1,-6 1,-8 3,-5 9,-6 14,-7 3,0 6,0 7,1l1 10c-4,-1 -7,-1 -8,1 -2,1 -2,4 -2,6l10 0 0 10 -10 0 0 30 -13 0 0 -30 -8 0 0 -10z"/>
+    <path class="fil1" d="M2 15c0,-7 6,-13 13,-13l45 0c6,0 12,6 12,13l0 11c1,0 2,-1 2,-1l0 -12c0,-7 -6,-13 -13,-13l-48 0c-7,0 -13,6 -13,13l0 12c0,0 1,0 2,1l0 -11z"/>
+    <path class="fil2" d="M15 2c-7,0 -13,6 -13,13l0 11c1,0 1,0 2,1l0 -11c0,-7 5,-12 12,-12l42 0c7,0 12,5 12,12l0 10c1,0 1,0 2,0l0 -11c0,-7 -6,-13 -12,-13l-45 0z"/>
+    <path class="fil1" d="M16 4c-7,0 -12,5 -12,12l0 11c5,1 15,3 28,4l0 -3 8 0 0 -3c0,-4 1,-6 1,-8 3,-5 9,-6 14,-7 3,0 6,0 7,1l1 10c-4,-1 -7,-1 -8,1 -2,1 -2,4 -2,6l10 0 0 0c2,0 5,-1 7,-2l0 -10c0,-7 -5,-12 -12,-12l-42 0z"/>
+    <path class="fil3" d="M2 60l0 -34c-1,-1 -2,-1 -2,-1l0 36c0,8 6,14 13,14l48 0c7,0 13,-6 13,-14l0 -36c0,0 -1,1 -2,1l0 34c0,7 -6,13 -12,13l-45 0c-7,0 -13,-6 -13,-13z"/>
+    <path class="fil4" d="M2 26l0 34c0,7 6,13 13,13l45 0c6,0 12,-6 12,-13l0 -34c-1,0 -1,0 -2,0l0 33c0,6 -5,12 -12,12l-42 0c-7,0 -12,-6 -12,-12l0 -32c-1,-1 -1,-1 -2,-1z"/>
+    <path class="fil3" d="M4 27l0 32c0,6 5,12 12,12l42 0c7,0 12,-6 12,-12l0 -33c-2,1 -5,2 -7,2l0 10 -10 0 0 30 -13 0 0 -30 -8 0 0 -7c-13,-1 -23,-3 -28,-4z"/>
+   </g>
+  </g>
+ </g>
+</svg>

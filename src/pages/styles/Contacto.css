@@ -1,0 +1,25 @@
+.contacto__container {
+  height: 100vh;
+}
+
+.contacto__titulo {
+  text-align: center;
+  color: black;
+  margin-top: 2%;
+}
+
+.contacto__links {
+  text-align: center;
+}
+
+.contacto__img {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.contacto__data {
+  text-align: center;
+  margin: 3%;
+  color: black;
+}

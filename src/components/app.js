@@ -10,6 +10,8 @@ import Layout from './Layout';
 import AppRoute from './AppRoute';
 import NotFound from '../pages/NotFound';
 
+import './styles/app.css';
+
 function App() {
         return(
             <BrowserRouter>

@@ -1,33 +1,30 @@
+.container__home {
+  text-align: center;
+  width: 100%;
+}
+
 .boton {
   margin-top: 2%;
   margin-bottom: 2%;
 }
 
-.container__home {
-  text-align: center;
-}
-
 .contenedor__img {
-  width: 100%;
+  height: 100vh;
   margin: 0px auto;
 }
 
-.imgfondo {
-  width: 100%;
-  display: block;
-  position: absolute;
-}
-
 .imgYo {
-  position: absolute;
-  margin-left: 25%;
-  width: 50%;
-  display: block;
+  position: relative;
+  width: 40%;
 }
 
 .imgCuervo {
-  position: absolute;
-  width: 15%;
-  margin-top: 18%;
-  margin-left: 70%;
+  position: relative;
+  width: 10%;
+  margin-top: -2%;
+  margin-left: -2%;
+}
+
+.imgCuervo:hover {
+  transform: perspective(600px) rotateX(-180deg) translateY(-160%);
 }
