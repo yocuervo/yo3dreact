@@ -7,7 +7,7 @@ import ImgFondo from '../images/LogoCuervo.svg';
 function QuienesSomos() {
     return (
         <div className="somos__container">
-            <img src={ImgFondo} alt="Imagen Decorativa" className="img__fondo" />
+            <img src={ImgFondo} alt="Imagen Decorativa" className="somos__img__fondo" />
             <h2 className="somos__hdos">Yo-Diseños es un proyecto iniciado en el año 2015 aproximadamente, nacido directamente de la 
                 necesidad de poder hacer algo con el torrente de ideas que una mente puede llegar a generar.<br/>
                 Comenzó comercialmente como un taller de Serigrafía, diseño, plotteo e impresión pero con el 

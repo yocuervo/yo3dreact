@@ -1,32 +1,37 @@
-.container__impresiones {
+.impresiones__container {
   width: 100%;
 }
 
-.titulo {
+.impresiones__titulo {
   text-align: center;
   color: rgb(0, 0, 0);
   text-decoration: underline;
   position: relative;
 }
 
-.col {
+.impresiones__row {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.impresiones__col {
   border: 5px solid rgb(90, 31, 167);
   border-radius: 20px;
   background-color: rgba(110, 125, 167, 0.8);
-  margin-left: 2%;
-  margin-right: 2%;
-  height: 50vh;
+  width: 70%;
+  height: auto;
+  margin-top: 1%;
+  text-align: center;
 }
 
-.contenedor__modelos {
-  position: relative;
-  margin: 2%;
-  height: 50%;
+.impresiones__img {
   width: 50%;
-  margin-left: 25%;
-  background-color: chartreuse;
-}
-
-.row {
-  margin: 5px;
+  height: 70%;
+  min-width: 100px;
+  max-width: 300px;
+  max-height: 250px;
+  margin: 2%;
+  object-fit: cover;
+  object-position: center center;
 }
