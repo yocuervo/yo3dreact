@@ -1,4 +1,8 @@
-.titulo {
+.back__container {
+  margin-top: 5px;
+}
+
+.back__titulo {
   border: 2px solid blueviolet;
   border-radius: 15px;
   background-color: rgb(193, 138, 245);
@@ -10,24 +14,24 @@
   padding: 5px;
 }
 
-.contenedor__nuevo {
+.back__contenedor__nuevo {
   border: 2px solid blueviolet;
   border-radius: 15px;
   background-color: rgb(193, 138, 245);
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 2px;
+  margin-top: 5px;
   max-width: 96%;
   padding: 5px;
   font-style: italic;
   color: whitesmoke;
 }
 
-.input {
+.back__input {
   border-radius: 8px;
 }
 
-.row {
+.back__row {
   position: relative;
   margin: 5px;
 }

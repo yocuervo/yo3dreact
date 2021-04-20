@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../BackOffice/Styles/BackOffice.css';
+import { Link } from 'react-router-dom';
 
 function irArriba(){
     window.scrollTo({top:0, behavior: 'smooth'});
@@ -8,21 +9,21 @@ function irArriba(){
 
 function BackOffice() {
     return (
-        <div className="container__back">
-            <div className="row header">
-                <div className="col titulo">PRODUCTOS</div>
+        <div className="backOffice__container">
+            <div className="row backOffice__header">
+                <div className="col backOffice__titulo">PRODUCTOS</div>
                 <div className="col">
-                    <button className="btn btn-primary boton__header">Nuevo Producto</button>
+                    <Link to="/backproductos" className="btn btn-primary boton__header">Nuevo Producto</Link>
                 </div>
             </div>
-            <div className="row contenedor">
+            <div className="row backOffice__contenedor">
                 <div className="col">
-                    <div className="producto"></div>
+                    <div className="backOffice__producto"></div>
                     <button className="btn btn-info  ml-2 mr-2">Modificar</button>
                     <button className="btn btn-danger">Eliminar</button>
                 </div>
                 <div className="col">
-                    <div className="producto"></div>
+                    <div className="backOffice__producto"></div>
                     <button className="btn btn-info  ml-2 mr-2">Modificar</button>
                     <button className="btn btn-danger">Eliminar</button>
                 </div>

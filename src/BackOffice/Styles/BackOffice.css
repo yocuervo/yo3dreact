@@ -1,8 +1,8 @@
-.container__back {
+.backOffice__container {
   margin-top: 5px;
 }
 
-.header {
+.backOffice__header {
   border: 2px solid blueviolet;
   border-radius: 15px;
   background-color: rgb(193, 138, 245);
@@ -13,7 +13,7 @@
   padding: 5px;
 }
 
-.titulo {
+.backOffice__titulo {
   font-size: 25px;
   font-weight: bold;
   color: aliceblue;
@@ -23,7 +23,7 @@
   flex-direction: column;
 }
 
-.contenedor {
+.backOffice__contenedor {
   border: 2px solid blueviolet;
   border-radius: 15px;
   background-color: rgb(193, 138, 245);
@@ -34,7 +34,7 @@
   padding: 10px;
 }
 
-.producto {
+.backOffice__producto {
   height: 200px;
   background-color: aquamarine;
   margin: 5px;
