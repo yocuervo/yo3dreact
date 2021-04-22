@@ -5,7 +5,7 @@ import './styles/Header.css';
 
 function Header() {
     return (
-     <div className="header">
+     <div className="header ">
             <Link to="/impresiones" className="btn btn-outline-dark">Productos</Link>
             <Link to="/quienessomos" className="btn btn-outline-dark">Quienes Somos</Link>
             <Link to="/contacto" className="btn btn-outline-dark">Contacto</Link>

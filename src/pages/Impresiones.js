@@ -10,7 +10,7 @@ function Impresiones() {
         <div className="impresiones__container">
             <div className="impresiones__titulo"><h1>Piezas Impresas en 3D</h1></div>
 
-            <div className="row row-cols-2 impresiones__row">
+            <div className="row row-cols-1 row-cols-md-2 impresiones__row">
 
                 <div className="col impresiones__col">
                     <img src={imgUnoUno} className="impresiones__img" alt="modelo"/>
