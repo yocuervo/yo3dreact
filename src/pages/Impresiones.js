@@ -8,7 +8,7 @@ import imgDosUno from '../images/modelos/imgDosUno.jpg';
 function Impresiones() {
     return (
         <div className="impresiones__container">
-            <div className="impresiones__titulo"><h1>Piezas Impresas en 3D</h1></div>
+            <div className="impresiones__titulo"><h1>Piezas Impresas en 3D!</h1></div>
 
             <div className="row row-cols-1 row-cols-md-2 impresiones__row">
 
