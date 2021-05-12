@@ -1,20 +1,29 @@
-.back__container {
+.modelslist__container {
   margin-top: 5px;
 }
 
-.back__titulo {
+.modelslist__header {
   border: 2px solid blueviolet;
   border-radius: 15px;
   background-color: rgb(193, 138, 245);
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 2px;
   max-width: 96%;
   text-align: center;
   padding: 5px;
 }
 
-.back__contenedor__nuevo {
+.modelslist__titulo {
+  font-size: 25px;
+  font-weight: bold;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.modelslist__contenedor {
   border: 2px solid blueviolet;
   border-radius: 15px;
   background-color: rgb(193, 138, 245);
@@ -22,16 +31,11 @@
   margin-right: 2%;
   margin-top: 5px;
   max-width: 96%;
-  padding: 5px;
-  font-style: italic;
-  color: whitesmoke;
+  padding: 10px;
 }
 
-.back__input {
-  border-radius: 8px;
-}
-
-.back__row {
-  position: relative;
+.modelslist__producto {
+  height: 200px;
+  border: 2px solid rgb(132, 36, 223);
   margin: 5px;
 }

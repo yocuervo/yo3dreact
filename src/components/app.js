@@ -10,8 +10,8 @@ import Layout from './Layout';
 import AppRoute from './AppRoute';
 import NotFound from '../pages/NotFound';
 
-import BackOffice from '../BackOffice/BackOffice';
-import ProductosBack from '../BackOffice/ProductosBack';
+import ModelsList from '../BackOffice/ModelsList';
+import NewModel from '../BackOffice/NewModel';
 
 import './styles/app.css';
 
@@ -23,8 +23,8 @@ function App() {
                         <AppRoute exact path="/impresiones" component={Impresiones} layout={Layout} />
                         <AppRoute exact path="/quienessomos" component={QuienesSomos} layout={Layout} />
                         <AppRoute exact path="/contacto" component={Contacto} layout={Layout} />
-                        <AppRoute exact path="/backoffice" component={BackOffice} layout={Layout} />
-                        <AppRoute exact path="/backproductos" component={ProductosBack} layout={Layout} />
+                        <AppRoute exact path="/modelslist" component={ModelsList} layout={Layout} />
+                        <AppRoute exact path="/nuevomodelo" component={NewModel} layout={Layout} />
                         <AppRoute component={NotFound} layout={NotFound} />
                     </Switch>
             </BrowserRouter>
