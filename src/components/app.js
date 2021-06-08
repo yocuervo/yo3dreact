@@ -23,8 +23,8 @@ function App() {
                         <AppRoute exact path="/impresiones" component={Impresiones} layout={Layout} />
                         <AppRoute exact path="/quienessomos" component={QuienesSomos} layout={Layout} />
                         <AppRoute exact path="/contacto" component={Contacto} layout={Layout} />
-                        <AppRoute exact path="/modelslist" component={ModelsList} layout={Layout} />
-                        <AppRoute exact path="/nuevomodelo" component={NewModel} layout={Layout} />
+                        <AppRoute exact path="/modelslist" component={ModelsList} layout={ModelsList} />
+                        <AppRoute exact path="/nuevomodelo" component={NewModel} layout={NewModel} />
                         <AppRoute component={NotFound} layout={NotFound} />
                     </Switch>
             </BrowserRouter>

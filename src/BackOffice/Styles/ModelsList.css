@@ -35,7 +35,6 @@
 }
 
 .modelslist__producto {
-  height: 200px;
-  border: 2px solid rgb(132, 36, 223);
+  width: 50%;
   margin: 5px;
 }
