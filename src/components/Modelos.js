@@ -8,16 +8,7 @@ class Modelos extends React.Component {
     state = {
         loading: true,
         error: null,
-        data: {
-            img: "",
-            nombre: "",
-            alto: "",
-            ancho: "",
-            largo: "",
-            precio: "",
-            creadorModelo: "",
-            artistaModelo: ""
-        }
+        data: undefined
     }
 
     componentDidMount() {
@@ -49,16 +40,16 @@ class Modelos extends React.Component {
             <div className="row row-cols-1 row-cols-md-2 modelos__row">
 
                 <div className="col modelos__col">
-                    <img src={this.state.data.img} alt="Imagen del Modelo" />
-                    <h5>Nombre: {this.state.data.nombre}</h5>
-                    <h5>Alto: {this.state.data.alto}cm</h5>
-                    <h5>Ancho: {this.state.data.ancho}cm</h5>
-                    <h5>Largo: {this.state.data.largo}cm</h5>
-                    <h5>Precio: ${this.state.data.precio}</h5>
+                    <img src={this.props.img} alt="Imagen del Modelo" />
+                    <h5>Nombre: {this.props.nombre}</h5>
+                    <h5>Alto: {this.props.alto}cm</h5>
+                    <h5>Ancho: {this.props.ancho}cm</h5>
+                    <h5>Largo: {this.props.largo}cm</h5>
+                    <h5>Precio: ${this.props.precio}</h5>
                     <h5>Creador del Modelo</h5>
-                    <h5>{this.state.data.creadorModelo}</h5>
+                    <h5>{this.props.creadorModelo}</h5>
                     <h5>Pintor del Modelo</h5>
-                    <h5>{this.state.data.artistaModelo}</h5>
+                    <h5>{this.props.artistaModelo}</h5>
                 </div>
 
             </div>

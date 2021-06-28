@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../BackOffice/Styles/NewModel.css';
 import { Link } from 'react-router-dom';
+import api from '../Api';
 
 class NewModel extends React.Component {
     state = {
@@ -29,10 +30,16 @@ class NewModel extends React.Component {
         });
     };
 
-    handleSubmit = e => {
-        e.preventDefault();
-        console.log('Formulario Subido');
-        console.log(this.state)
+    handleSubmit = async e => {
+        e.preventDefault()
+        this.setState({ loading: true, error: null })
+
+        try {
+            await api.modelos.create(this.state.form)
+            this.setState({ loading: false })
+        } catch (error) {
+            this.setState({ loading: false, error: error })
+        }
     };
 
     render() {
