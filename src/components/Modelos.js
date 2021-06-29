@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './styles/Modelos.css';
 import PageLoading from './PageLoading';
 import api from '../Api';
+import ModelsDetail from './ModelsDetail';
 
 class Modelos extends React.Component {
     state = {
@@ -34,26 +34,16 @@ class Modelos extends React.Component {
         if (this.state.error) {
             return `Error: ${this.state.error.message}`;
         }
+        
+            for (const step = 0; step < 1; step++) {
 
-        return (
+                return (           
+                        <ModelsDetail model={this.state.data[step]} />
+                );
+            }
+       
+           {/* Cada uno de los Modelos deberian ser dinamicos, de manera que se rendericen por cada Array en el DB */}
 
-            <div className="row row-cols-1 row-cols-md-2 modelos__row">
-
-                <div className="col modelos__col">
-                    <img src={this.props.img} alt="Imagen del Modelo" />
-                    <h5>Nombre: {this.props.nombre}</h5>
-                    <h5>Alto: {this.props.alto}cm</h5>
-                    <h5>Ancho: {this.props.ancho}cm</h5>
-                    <h5>Largo: {this.props.largo}cm</h5>
-                    <h5>Precio: ${this.props.precio}</h5>
-                    <h5>Creador del Modelo</h5>
-                    <h5>{this.props.creadorModelo}</h5>
-                    <h5>Pintor del Modelo</h5>
-                    <h5>{this.props.artistaModelo}</h5>
-                </div>
-
-            </div>
-        )
     }
 }
 

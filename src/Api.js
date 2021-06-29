@@ -10,14 +10,14 @@ async function callApi(endpoint, options = {}) {
     const url = BASE_URL + endpoint;
     const response = await fetch(url, options);
     const data = await response.json();
-
+    console.log(data)
     return data;
 }
 
 const api = {
     modelos: {
         list() {
-            return callApi('/modelslist');
+            return callApi('/modelos');
         },
         create(modelo) {
             return callApi(`/modelslist`, {
