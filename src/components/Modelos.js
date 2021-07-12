@@ -8,7 +8,9 @@ class Modelos extends React.Component {
     state = {
         loading: true,
         error: null,
-        data: undefined
+        data: {
+            modelos: []
+        }
     }
 
     componentDidMount() {
@@ -34,15 +36,15 @@ class Modelos extends React.Component {
         if (this.state.error) {
             return `Error: ${this.state.error.message}`;
         }
-        
-            for (const step = 0; step < 1; step++) {
 
-                return (           
-                        <ModelsDetail model={this.state.data[step]} />
-                );
-            }
-       
-           {/* Cada uno de los Modelos deberian ser dinamicos, de manera que se rendericen por cada Array en el DB */}
+        return (
+            <React.Fragment>    
+                {this.state.data.map(model => (      
+                    <ModelsDetail model={model} key={model.id} />
+                    )).reverse()
+                }           
+            </React.Fragment>
+        )
 
     }
 }

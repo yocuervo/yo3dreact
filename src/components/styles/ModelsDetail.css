@@ -1,10 +1,10 @@
-.modelos__row {
+.modelsDetail__row {
   width: 96%;
   margin-left: 2%;
   margin-right: 2%;
 }
 
-.modelos__col {
+.modelsDetail__col {
   border: 5px solid rgb(90, 31, 167);
   border-radius: 20px;
   background-color: rgba(110, 125, 167, 0.8);
@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.modelos__img {
+.modelsDetail__img {
   width: 25vh;
   height: 50vh;
   margin: 2%;

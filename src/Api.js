@@ -20,7 +20,7 @@ const api = {
             return callApi('/modelos');
         },
         create(modelo) {
-            return callApi(`/modelslist`, {
+            return callApi(`/modelos`, {
                 method: 'POST',
                 body: JSON.stringify(modelo),
             });

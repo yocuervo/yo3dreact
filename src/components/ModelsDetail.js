@@ -7,10 +7,10 @@ class ModelsDetail extends React.Component {
     render() {
         return (
 
-            <div className="row row-cols-1 row-cols-md-2 modelos__row">
+            <div className="row row-cols-1 row-cols-md-2 modelsDetail__row">
 
-                <div className="col modelos__col">
-                    <img src={this.props.img} alt="Imagen del Modelo" />
+                <div className="col modelsDetail__col">
+                    <img src={this.props.img} alt="Imagen del Modelo" className="modelsDetail__img" />
                     <h5>Nombre: {this.props.model.nombre}</h5>
                     <h5>Alto: {this.props.model.alto}cm</h5>
                     <h5>Ancho: {this.props.model.ancho}cm</h5>
@@ -21,6 +21,8 @@ class ModelsDetail extends React.Component {
                     <h5>Pintor del Modelo</h5>
                     <h5>{this.props.model.artistaModelo}</h5>
                 </div>
+                    <button className="btn btn-info">Modificar</button>
+                    <button className="btn btn-danger">Eliminar</button>
 
             </div>
         )

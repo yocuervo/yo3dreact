@@ -25,8 +25,6 @@ class ModelsList extends React.Component {
                             <div className="modelslist__producto">
                                 <Modelos />
                             </div>
-                            <button className="btn btn-info  ml-5 mr-5">Modificar</button>
-                            <button className="btn btn-danger">Eliminar</button>
                         </div>
                     </div>
                 <button onClick={irArriba} className="btn btn-outline-info btn-lg btn-block mt-2 mb-2">Volver Arriba</button>

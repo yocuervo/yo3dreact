@@ -6,7 +6,9 @@ import api from '../Api';
 
 class NewModel extends React.Component {
     state = {
-        form: {
+        loading: true,
+        error: null,
+        modelos: {
             nombre:'',
             alto:'',
             ancho:'',
@@ -23,8 +25,8 @@ class NewModel extends React.Component {
 
     handleChange = e => {
         this.setState({
-            form: {
-                ...this.state.form,
+            modelos: {
+                ...this.state.modelos,
                 [e.target.name]: e.target.value,
             },
         });
@@ -35,8 +37,11 @@ class NewModel extends React.Component {
         this.setState({ loading: true, error: null })
 
         try {
-            await api.modelos.create(this.state.form)
-            this.setState({ loading: false })
+            await api.modelos.create(this.state.modelos);
+            this.setState({ loading: false });
+        
+            this.props.history.push('/modelslist');
+            
         } catch (error) {
             this.setState({ loading: false, error: error })
         }
@@ -55,7 +60,7 @@ class NewModel extends React.Component {
                                         placeholder="Nombre del modelo"
                                         type="text"
                                         name="nombre"
-                                        value={this.state.form.nombre}
+                                        value={this.state.modelos.nombre}
                                         />
                             </div>
                         </div>
@@ -66,7 +71,7 @@ class NewModel extends React.Component {
                                         className="form-control newmodel__input"
                                         type="number"
                                         name="alto"
-                                        value={this.state.form.alto}
+                                        value={this.state.modelos.alto}
                                         />
                             </div>
                         </div>
@@ -77,7 +82,7 @@ class NewModel extends React.Component {
                                         className="form-control newmodel__input"
                                         type="number"
                                         name="ancho"
-                                        value={this.state.form.ancho}
+                                        value={this.state.modelos.ancho}
                                         />
                             </div>
                         </div>
@@ -88,7 +93,7 @@ class NewModel extends React.Component {
                                         className="form-control newmodel__input"
                                         type="number"
                                         name="largo"
-                                        value={this.state.form.largo}
+                                        value={this.state.modelos.largo}
                                         />
                             </div>
                         </div>
@@ -99,7 +104,7 @@ class NewModel extends React.Component {
                                         className="form-control newmodel__input"
                                         type="number"
                                         name="precio"
-                                        value={this.state.form.precio}
+                                        value={this.state.modelos.precio}
                                         />
                             </div>
                         </div>
@@ -111,7 +116,7 @@ class NewModel extends React.Component {
                                         placeholder="Url Modelador 3D"
                                         type="text"
                                         name="creadorModelo"
-                                        value={this.state.form.creadorModelo}
+                                        value={this.state.modelos.creadorModelo}
                                         />
                             </div>
                         </div>
@@ -123,7 +128,7 @@ class NewModel extends React.Component {
                                         placeholder="Quien lo pinto"
                                         type="text"
                                         name="artistaModelo"
-                                        value={this.state.form.artistaModelo}
+                                        value={this.state.modelos.artistaModelo}
                                         />
                             </div>
                         </div>
@@ -131,10 +136,16 @@ class NewModel extends React.Component {
                             <button className="btn btn-primary">Subir Imagen</button>
                         </div>
                         <div className="row justify-content-end mr-3 newmodel__row">
-                                <Link to="/modelslist" className="btn btn-outline-secondary mr-3 btn-lg">Cancelar</Link>
+                                <Link to="/modelslist" className="btn btn-outline-secondary mr-3 btn-lg">
+                                    Cancelar
+                                </Link>
                                 <button onClick={this.handleClick}
+                                        onChange={this.handleChange}
+                                        onSubmit={this.handleSubmit}
+                                        error={this.state.error}
                                         className="btn btn-outline-success btn-lg"
-                                > 
+                                        type="submit"
+                                        > 
                                     Guardar
                                 </button>
                         </div>
