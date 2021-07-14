@@ -20,10 +20,11 @@ const api = {
             return callApi('/modelos');
         },
         create(modelo) {
-            return callApi(`/modelos`, {
-                method: 'POST',
-                body: JSON.stringify(modelo),
-            });
+            throw new Error('que pasa aca');
+            // return callApi(`/modelos`, {
+            //     method: 'POST',
+            //     body: JSON.stringify(modelo),
+            // });
         },
         read(modeloId) {
             return callApi(`/modelslist/${modeloId}`);

@@ -42,7 +42,7 @@ class Modelos extends React.Component {
                 {this.state.data.map(model => (      
                     <ModelsDetail model={model} key={model.id} />
                     )).reverse()
-                }           
+                }
             </React.Fragment>
         )
 

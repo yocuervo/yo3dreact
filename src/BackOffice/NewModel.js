@@ -3,10 +3,11 @@ import React from 'react';
 import '../BackOffice/Styles/NewModel.css';
 import { Link } from 'react-router-dom';
 import api from '../Api';
+import PageLoading from '../components/PageLoading';
 
 class NewModel extends React.Component {
     state = {
-        loading: true,
+        loading: false,
         error: null,
         modelos: {
             nombre:'',
@@ -39,7 +40,7 @@ class NewModel extends React.Component {
         try {
             await api.modelos.create(this.state.modelos);
             this.setState({ loading: false });
-        
+
             this.props.history.push('/modelslist');
             
         } catch (error) {
@@ -48,6 +49,10 @@ class NewModel extends React.Component {
     };
 
     render() {
+            if (this.state.loading) {
+                return <PageLoading />;
+            }
+            
             return(
                 <div className="container-fluid newmodel__container">
                 <div className="newmodel__titulo">Producto Nuevo</div>
