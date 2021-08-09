@@ -4,7 +4,7 @@ import PageLoading from './PageLoading';
 import api from '../Api';
 import ModelsDetail from './ModelsDetail';
 
-class Modelos extends React.Component {
+class Models extends React.Component {
     state = {
         loading: true,
         error: null,
@@ -49,4 +49,4 @@ class Modelos extends React.Component {
     }
 }
 
-export default Modelos;
+export default Models;
