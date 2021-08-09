@@ -35,14 +35,14 @@ class NewModel extends React.Component {
 
     handleSubmit = async e => {
         e.preventDefault()
-        this.setState({ loading: true, error: null })
+        this.setState({ loading: true, error: null });
 
         try {
             await api.modelos.create(this.state.modelos);
             this.setState({ loading: false });
-
-            this.props.history.push('/modelslist');
             
+            console.log('aaaaaaaaaaaaaaaa');
+            this.props.history.push('/modelslist');
         } catch (error) {
             this.setState({ loading: false, error: error })
         }
