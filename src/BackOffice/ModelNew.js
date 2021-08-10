@@ -1,13 +1,13 @@
 import React from 'react';
 
-import '../BackOffice/Styles/ModelEdit.css';
+import '../BackOffice/Styles/ModelNew.css';
 import api from '../Api';
 import PageLoading from '../components/PageLoading';
 import ModelForm from './ModelForm';
 
-class ModelEdit extends React.Component {
+class ModelNew extends React.Component {
     state = {
-        loading: true,
+        loading: false,
         error: null,
         piezas: {
             nombre:'',
@@ -17,24 +17,6 @@ class ModelEdit extends React.Component {
             precio:'',
             creadorModelo:'',
             artistaModelo:''
-        }
-    }
-
-    componentDidMount() {
-        this.fetchData()
-    }
-
-    fetchData = async e => {
-        this.setState({ loading: true, error: null })
-
-        try {
-            const data = await api.modelos.read(
-                this.props.match.params.modeloId
-            )
-
-            this.setState({ loading: false, modelos: data });
-        } catch (error) {
-            this.setState({ loading: false, error: error });
         }
     }
 
@@ -52,9 +34,9 @@ class ModelEdit extends React.Component {
         this.setState({ loading: true, error: null });
 
         try {
-            await api.modelos.update(this.props.match.params.modeloId, this.state.piezas);
+            await api.modelos.create(this.state.piezas);
             this.setState({ loading: false });
-
+            
             this.props.history.push('/modelslist');
         } catch (error) {
             this.setState({ loading: false, error: error })
@@ -68,7 +50,7 @@ class ModelEdit extends React.Component {
             
             return(
                 <div className="container-fluid Modelnew__container">
-                    <div className="ModelNew__titulo">Editar Producto</div>
+                    <div className="ModelNew__titulo">Nuevo Producto</div>
                     <ModelForm 
                         onChange={this.handleChange}
                         onSubmit={this.handleSubmit}
@@ -80,4 +62,4 @@ class ModelEdit extends React.Component {
     }
 }
 
-export default ModelEdit;
+export default ModelNew;

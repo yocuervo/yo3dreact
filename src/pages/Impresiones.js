@@ -5,7 +5,7 @@ import Models from '../components/Models';
 
 class Impresiones extends React.Component {
     state = {
-        modelos: {
+        piezas: {
             nombre:'',
             alto:'',
             largo:'',

@@ -8,9 +8,7 @@ class Models extends React.Component {
     state = {
         loading: true,
         error: null,
-        data: {
-            modelos: []
-        }
+        data: undefined
     }
 
     componentDidMount() {
@@ -29,7 +27,7 @@ class Models extends React.Component {
     }
 
     render() {
-        if (this.state.loading === true) {
+        if (this.state.loading === true && !this.state.data) {
             return <PageLoading />;
         }
 
@@ -38,11 +36,13 @@ class Models extends React.Component {
         }
 
         return (
-            <React.Fragment>    
-                {this.state.data.map(model => (      
-                    <ModelsDetail model={model} key={model.id} />
-                    )).reverse()
-                }
+            <React.Fragment>
+                
+                    {this.state.data.map(model => (      
+                        <ModelsDetail model={model} key={model.id} />
+                        )).reverse()
+                    }
+               
             </React.Fragment>
         )
 

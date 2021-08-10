@@ -11,7 +11,7 @@ import AppRoute from './AppRoute';
 import NotFound from '../pages/NotFound';
 
 import ModelsList from '../BackOffice/ModelsList';
-import NewModel from '../BackOffice/NewModel';
+import ModelNew from '../BackOffice/ModelNew';
 import ModelEdit from '../BackOffice/ModelEdit';
 
 import './styles/app.css';
@@ -25,7 +25,7 @@ function App() {
                         <AppRoute exact path="/quienessomos" component={QuienesSomos} layout={Layout} />
                         <AppRoute exact path="/contacto" component={Contacto} layout={Layout} />
                         <AppRoute exact path="/modelslist" component={ModelsList} layout={ModelsList} />
-                        <AppRoute exact path="/modelslist/nuevomodelo" component={NewModel} layout={NewModel} />
+                        <AppRoute exact path="/modelslist/nuevomodelo" component={ModelNew} layout={ModelNew} />
                         <AppRoute exact path="/modelslist/:modelId/edit" component={ModelEdit} layout={ModelEdit} />
                         <AppRoute component={NotFound} layout={NotFound} />
                     </Switch>
