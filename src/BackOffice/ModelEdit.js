@@ -9,7 +9,7 @@ class ModelEdit extends React.Component {
     state = {
         loading: true,
         error: null,
-        piezas: {
+        modelos: {
             nombre:'',
             alto:'',
             ancho:'',
@@ -29,8 +29,11 @@ class ModelEdit extends React.Component {
 
         try {
             const data = await api.modelos.read(
-                this.props.match.params.modeloId
-            )
+                // No es la forma correcta, pero al menos funciona
+                this.props.children.props.location.pathname.split('/')[2]
+                // this.props.match.params.modeloId
+                // No esta leyendo el ID, hay que averiguar como acceder a ese id
+            );
 
             this.setState({ loading: false, modelos: data });
         } catch (error) {
@@ -40,8 +43,8 @@ class ModelEdit extends React.Component {
 
     handleChange = e => {
         this.setState({
-            piezas: {
-                ...this.state.piezas,
+            modelos: {
+                ...this.state.modelos,
                 [e.target.name]: e.target.value,
             },
         });
@@ -52,7 +55,7 @@ class ModelEdit extends React.Component {
         this.setState({ loading: true, error: null });
 
         try {
-            await api.modelos.update(this.props.match.params.modeloId, this.state.piezas);
+            await api.modelos.update(this.props.children.props.location.pathname.split('/')[2], this.state.modelos);
             this.setState({ loading: false });
 
             this.props.history.push('/modelslist');
@@ -72,7 +75,7 @@ class ModelEdit extends React.Component {
                     <ModelForm 
                         onChange={this.handleChange}
                         onSubmit={this.handleSubmit}
-                        formValues={this.state.piezas}
+                        formValues={this.state.modelos}
                         error={this.state.error}
                     />
                 </div>

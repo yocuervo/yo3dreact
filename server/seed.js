@@ -2,13 +2,14 @@ const fs = require('fs');
 const path = require('path');
 const faker = require('faker');
 
-function createModelos(limit = 5) {
+function createModels(limit = 5) {
   const result = [];
 
   for (let i = 0; i < limit; i++) {
 
     result.push({
       id: faker.random.uuid(),
+      img,
       nombre,
       alto,
       ancho,
@@ -16,6 +17,8 @@ function createModelos(limit = 5) {
       precio,
       creadorModelo,
       artistaModelo
+
+      // Todos me los marca como "any" pero en la prueba de platzi salen como "strings"
     });
   }
 
@@ -24,7 +27,7 @@ function createModelos(limit = 5) {
 
 function main() {
   const data = {
-    modelos: createModelos(),
+    modelos: createModels(),
   };
 
   fs.writeFileSync(

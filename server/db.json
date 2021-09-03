@@ -1344,13 +1344,23 @@
     },
     {
       "nombre": "Lucifer",
-      "alto": "",
-      "ancho": "",
-      "largo": "",
+      "alto": "25",
+      "ancho": "30",
+      "largo": "55",
       "precio": "",
       "creadorModelo": "",
       "artistaModelo": "",
       "id": "_QBrXMW"
+    },
+    {
+      "nombre": "Mona",
+      "alto": "42",
+      "ancho": "23",
+      "largo": "40",
+      "precio": "52000",
+      "creadorModelo": "gataDivina.com",
+      "artistaModelo": "Anubis",
+      "id": "wgwoCnt"
     }
   ]
 }

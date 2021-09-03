@@ -24,16 +24,16 @@ const api = {
             });
         },
         read(modeloId) {
-            return callApi(`/modelslist/${modeloId}`);
+            return callApi(`/modelos/${modeloId}`);
         },
         update(modeloId, updates) {
-            return callApi(`/modelslist/${modeloId}`, {
+            return callApi(`/modelos/${modeloId}`, {
                 method: 'PUT',
                 body: JSON.stringify(updates),
             });
         },
         remove(modeloId) {
-            return callApi(`/modelslist/${modeloId}`, {
+            return callApi(`/modelos/${modeloId}`, {
                 method: 'DELETE',
             });
         },

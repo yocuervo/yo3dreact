@@ -15,6 +15,7 @@ import ModelNew from '../BackOffice/ModelNew';
 import ModelEdit from '../BackOffice/ModelEdit';
 
 import './styles/app.css';
+import Models from './Models';
 
 function App() {
         return(
@@ -24,6 +25,7 @@ function App() {
                         <AppRoute exact path="/impresiones" component={Impresiones} layout={Layout} />
                         <AppRoute exact path="/quienessomos" component={QuienesSomos} layout={Layout} />
                         <AppRoute exact path="/contacto" component={Contacto} layout={Layout} />
+                        <AppRoute exact path="/models" component={Models} layout={Models} />
                         <AppRoute exact path="/modelslist" component={ModelsList} layout={ModelsList} />
                         <AppRoute exact path="/modelslist/nuevomodelo" component={ModelNew} layout={ModelNew} />
                         <AppRoute exact path="/modelslist/:modelId/edit" component={ModelEdit} layout={ModelEdit} />
