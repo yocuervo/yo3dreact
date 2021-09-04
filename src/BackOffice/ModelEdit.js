@@ -29,10 +29,7 @@ class ModelEdit extends React.Component {
 
         try {
             const data = await api.modelos.read(
-                // No es la forma correcta, pero al menos funciona
-                this.props.children.props.location.pathname.split('/')[2]
-                // this.props.match.params.modeloId
-                // No esta leyendo el ID, hay que averiguar como acceder a ese id
+                this.props.match.params.modelId
             );
 
             this.setState({ loading: false, modelos: data });
@@ -55,7 +52,7 @@ class ModelEdit extends React.Component {
         this.setState({ loading: true, error: null });
 
         try {
-            await api.modelos.update(this.props.children.props.location.pathname.split('/')[2], this.state.modelos);
+            await api.modelos.update(this.props.match.params.modelId, this.state.modelos);
             this.setState({ loading: false });
 
             this.props.history.push('/modelslist');

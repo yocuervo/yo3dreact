@@ -24,7 +24,9 @@ const api = {
             });
         },
         read(modeloId) {
-            return callApi(`/modelos/${modeloId}`);
+            return callApi(`/modelos/${modeloId}`, {
+                method: 'GET',
+            });
         },
         update(modeloId, updates) {
             return callApi(`/modelos/${modeloId}`, {
