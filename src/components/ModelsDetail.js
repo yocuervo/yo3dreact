@@ -18,7 +18,7 @@ class ModelsDetail extends React.Component {
                     <h5>Precio: ${this.props.model.precio}</h5>
                     <h5>Creador del Modelo</h5>
                     <h5>{this.props.model.creadorModelo}</h5>
-                    <h5>Pintor del Modelo</h5>
+                    <h5>Pintor/a del Modelo</h5>
                     <h5>{this.props.model.artistaModelo}</h5>
                     <Link 
                         className="btn btn-primary modelsDetail__button"
