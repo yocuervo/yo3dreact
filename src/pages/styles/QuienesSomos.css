@@ -6,7 +6,7 @@
   margin-right: 5%;
 }
 
-.img__fondo {
+.somos__img__fondo {
   position: fixed;
   z-index: -1;
   transform: rotate(-22deg);

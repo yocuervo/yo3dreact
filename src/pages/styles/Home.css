@@ -1,4 +1,4 @@
-.container__home {
+.home__container {
   text-align: center;
   width: 100%;
 }
@@ -8,23 +8,23 @@
   margin-bottom: 2%;
 }
 
-.contenedor__img {
+.home__contenedor__img {
   height: 100vh;
   margin: 0px auto;
 }
 
-.imgYo {
+.home__imgYo {
   position: relative;
   width: 40%;
 }
 
-.imgCuervo {
+.home__imgCuervo {
   position: relative;
   width: 10%;
   margin-top: -2%;
   margin-left: -2%;
 }
 
-.imgCuervo:hover {
+.home__imgCuervo:hover {
   transform: perspective(600px) rotateX(-180deg) translateY(-160%);
 }
