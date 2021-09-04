@@ -1,0 +1,40 @@
+.modelslist__container {
+  margin-top: 5px;
+}
+
+.modelslist__header {
+  border: 2px solid blueviolet;
+  border-radius: 15px;
+  background-color: rgb(193, 138, 245);
+  margin-left: 2%;
+  margin-right: 2%;
+  max-width: 96%;
+  text-align: center;
+  padding: 5px;
+}
+
+.modelslist__titulo {
+  font-size: 25px;
+  font-weight: bold;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.modelslist__contenedor {
+  border: 2px solid blueviolet;
+  border-radius: 15px;
+  background-color: rgb(193, 138, 245);
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5px;
+  max-width: 96%;
+  padding: 10px;
+}
+
+.modelslist__producto {
+  width: 50%;
+  margin: 5px;
+}

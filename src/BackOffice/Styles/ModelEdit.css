@@ -1,29 +1,20 @@
-.backOffice__container {
+.ModelEdit__container {
   margin-top: 5px;
 }
 
-.backOffice__header {
+.ModelEdit__titulo {
   border: 2px solid blueviolet;
   border-radius: 15px;
   background-color: rgb(193, 138, 245);
   margin-left: 2%;
   margin-right: 2%;
+  margin-top: 2px;
   max-width: 96%;
   text-align: center;
   padding: 5px;
 }
 
-.backOffice__titulo {
-  font-size: 25px;
-  font-weight: bold;
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-}
-
-.backOffice__contenedor {
+.ModelEdit__contenedor__nuevo {
   border: 2px solid blueviolet;
   border-radius: 15px;
   background-color: rgb(193, 138, 245);
@@ -31,11 +22,16 @@
   margin-right: 2%;
   margin-top: 5px;
   max-width: 96%;
-  padding: 10px;
+  padding: 5px;
+  font-style: italic;
+  color: whitesmoke;
 }
 
-.backOffice__producto {
-  height: 200px;
-  background-color: aquamarine;
+.ModelEdit__input {
+  border-radius: 8px;
+}
+
+.ModelEdit__row {
+  position: relative;
   margin: 5px;
 }

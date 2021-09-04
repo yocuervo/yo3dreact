@@ -1,8 +1,8 @@
-.back__container {
+.ModelNew__container {
   margin-top: 5px;
 }
 
-.back__titulo {
+.ModelNew__titulo {
   border: 2px solid blueviolet;
   border-radius: 15px;
   background-color: rgb(193, 138, 245);
@@ -14,7 +14,7 @@
   padding: 5px;
 }
 
-.back__contenedor__nuevo {
+.ModelNew__contenedor__nuevo {
   border: 2px solid blueviolet;
   border-radius: 15px;
   background-color: rgb(193, 138, 245);
@@ -27,11 +27,11 @@
   color: whitesmoke;
 }
 
-.back__input {
+.ModelNew__input {
   border-radius: 8px;
 }
 
-.back__row {
+.ModelNew__row {
   position: relative;
   margin: 5px;
 }
