@@ -9,6 +9,8 @@ class ModelEdit extends React.Component {
     state = {
         loading: true,
         error: null,
+        data: undefined,
+        modalIsOpen: false,
         modelos: {
             nombre:'',
             alto:'',
@@ -61,19 +63,47 @@ class ModelEdit extends React.Component {
         }
     };
 
+    handleOpenModal = e => {
+        this.setState({ modalIsOpen: true })
+    }
+
+    handleCloseModal = e => {
+        this.setState({ modalIsOpen: false })
+    }
+
+    handleDeleteModel = async e => {
+        this.setState({ loading: true, error: null })
+
+        try {
+            await api.modelos.remove(
+                this.props.match.params.modelId
+            )
+
+            this.props.history.push('/modelslist')
+        } catch(error) {
+            this.setState({ loading: false, error: error })
+        }
+    }
+
     render() {
             if (this.state.loading) {
                 return <PageLoading />;
             }
             
             return(
-                <div className="container-fluid Modelnew__container">
-                    <div className="ModelNew__titulo">Editar Producto</div>
+                <div className="container-fluid ModelEdit__container">
+                    <div className="ModelEdit__titulo">Editar Producto</div>
                     <ModelForm 
                         onChange={this.handleChange}
                         onSubmit={this.handleSubmit}
                         formValues={this.state.modelos}
                         error={this.state.error}
+                        
+                        onDeleteModel={this.handleDeleteModel}
+                        onOpenModal={this.handleOpenModal}
+                        onCloseModal={this.handleCloseModal}
+                        modalIsOpen={this.state.modalIsOpen}
+                        model={this.state.data}
                     />
                 </div>
         );

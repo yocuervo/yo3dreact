@@ -23,7 +23,6 @@ class ModelsDetail extends React.Component {
                     <Link 
                         className="btn btn-primary modelsDetail__button"
                         to={`/modelslist/${this.props.model.id}/edit`}>Modificar</Link>
-                    <button className="btn btn-danger modelsDetail__button">Eliminar</button>
                 </div>
             
             </div>

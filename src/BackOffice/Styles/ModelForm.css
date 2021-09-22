@@ -23,3 +23,9 @@
   position: relative;
   margin: 5px;
 }
+
+.modelForm__contenedorButton {
+  margin-top: 1%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
